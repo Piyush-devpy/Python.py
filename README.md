@@ -28,7 +28,6 @@ I will keep updating this repository whenever I learn something new.
 
 This repository contains the concepts and experiments that I create while learning Python.
 
-### 🟢 Beginner
 
 - Variables
 - Data Types
