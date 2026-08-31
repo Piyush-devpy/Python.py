@@ -2,7 +2,7 @@
 
 <img src="https://www.python.org/static/community_logos/python-logo.png" alt="Python Logo" width="250">
 
-<h1><u>Python</u></h1>
+<h1><u> Learning Python</u></h1>
 
 <img src="https://img.shields.io/badge/Python-3%2B-blue?logo=python&logoColor=white">
 <img src="https://img.shields.io/badge/Level-Beginner%20→%20Advanced-green">
@@ -53,6 +53,7 @@ This repository contains the concepts and learning projects that I create while 
 ```
  - Guess Game
  - Translator
+ - Multiple choice question Quiz
 ```
 
 

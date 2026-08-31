@@ -81,22 +81,6 @@ while i <= 10:
     i+=1
 print("DONE")    
 
-# Guess Game
-secret_word="Baka"
-guess=""
-Chances = ""
-
-for Chances in range(1,4):
-    guess = input("Enter A Word:")
-    if guess == secret_word:
-        print("You Won!")
-        break
-    elif Chances == 3:
-        print("Chances Over.Better Luck Next Time.")        
-    elif guess != secret_word:
-        print("Try Again.")
-    else:
-        break
 #Exponent Function
 def exponent(n,N):#Function command
     num=1 
@@ -117,21 +101,6 @@ print(Number_grid[1][1]) #print number from the index of the 2D list.
 for row in Number_grid:
     print(row)  #example for nested loops
 
-
-#Translator 
-#Q- Create a translator that will convert the vowels present inside a word into "g".
-def translator():
-    vowels=["a","e","i","o","u","A","E","I","O","U"]
-
-    word=str(input("Enter a word: "))
-    for character in word: #This line check for the character in the word.
-        if character in  vowels: #This line check for vowel present in the word.
-            updated_word=word.replace(character,"g") # This word replace the vowel with "g".
-            print(updated_word)
-            break #break the code after it succesfull completion
-    else:
-        print ("Word does not contain any vowels.") 
-translator()
 
 #Lesson 4 
 #Catching errors - try/Except 
@@ -169,6 +138,7 @@ class Student:
 
 Report=Student("4535","Alex","90") #When these value are passed they are being initialized inside the Student class.
 print(Report.student_id,Report.name,Report.marks)   
+
 
 
 

@@ -1,15 +1,6 @@
 #This file was created for learning File I/O.
+
 Alex 
 Raven
 Robin
-Starfire
-Starfire
-Starfire
-Starfire
-Starfire
-Starfire
-Starfire
-Starfire
-Starfire
-Starfire
 Starfire
