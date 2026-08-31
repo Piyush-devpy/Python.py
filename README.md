@@ -26,7 +26,7 @@ I will keep updating this repository whenever I learn something new.
 
 ## 📚 What This Repository Contains
 
-This repository contains the concepts and experiments that I create while learning Python.
+This repository contains the concepts and learning projects that I create while learning Python.
 
 
 - Variables
@@ -44,6 +44,16 @@ This repository contains the concepts and experiments that I create while learni
 - `while` Loops
 - String Methods
 - List Methods
+- Catching Error - `try/Except`
+- Reading and Write Files
+- Modules & Pip
+- Classes & Object
+
+## Projects-
+```
+ - Guess Game
+ - Translator
+```
 
 
 ## 🗂️ Repository Structure
