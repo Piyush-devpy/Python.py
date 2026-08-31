@@ -1,5 +1,5 @@
 #Lesson 1
-
+# Comments -Use for describing your code,writing a note  or write a line that is ignore by python. (#) used for comments.
 character_name="Piyush" #This is a variable [Piyush = String]
 character_age= "18" #This is another variable[18 = Float]
 print("My name is :", character_name)
@@ -132,5 +132,43 @@ def translator():
     else:
         print ("Word does not contain any vowels.") 
 translator()
+
+#Lesson 4 
+#Catching errors - try/Except 
+try:
+    number= int(input("Enter A number: "))
+    print(number)      #This code check if the user has enter an int or a string.
+except ValueError as e:
+    print(e) # if user enter a string than this will show us the error.
+#Reading Files
+#"r"- stand for read."r+"-stand for read and write.
+#"w"- stand for write.
+#"a"- stand for append(add info at end of file).
+#.readable()tell us whether or not we can run the file.
+#.read()=read the file..readlines()=put all text in code  inside array .
+Name_file=open("Name.txt","r+")
+print(Name_file.readable())
+print(Name_file.read())
+Name_file.write("\nStarfire")#\n is used for new line.
+Name_file.close()#Used for closing a file.
+
+#Modules & Pip
+#Module a file containing python definations and statement.
+import random #used for importing different modules.
+#pip - Help in installing third-party / external python module.It is a terminal command.
+# use pip --version to check it version inside the terminal.
+
+#Classes and object
+#Class - It is a type of datatype that we store inside our code.
+class Student:
+                        #Parameter
+    def __init__(self,student_id,name,marks): #__init__ -initialize function(mapping out what attribute the class should have).
+        self.student_id=student_id  #This means the student id will be equal to the id given inside the report.
+        self.name=name  #This means the student name  will be equal to the name given inside the report.
+        self.marks=marks #This means the student marks will be equal to the marks given inside the report.
+
+Report=Student("4535","Alex","90") #When these value are passed they are being initialized inside the Student class.
+print(Report.student_id,Report.name,Report.marks)   
+
 
 
