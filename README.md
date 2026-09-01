@@ -48,6 +48,8 @@ This repository contains the concepts and learning projects that I create while 
 - Reading and Write Files
 - Modules & Pip
 - Classes & Object
+- Object Function
+- Inheritance
 
 ## Projects-
 ```
@@ -62,6 +64,7 @@ This repository contains the concepts and learning projects that I create while 
 ```text
 Lessons/
 │
+├── Name.txt
+├── Project.py
 ├── Python.py
-│
 └── README.md

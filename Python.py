@@ -136,9 +136,29 @@ class Student:
         self.name=name  #This means the student name  will be equal to the name given inside the report.
         self.marks=marks #This means the student marks will be equal to the marks given inside the report.
 
+    def on_honor_roll(self): #Object Function
+        if self.marks <= 80:
+          return True
+        else: 
+            return False
+
 Report=Student("4535","Alex","90") #When these value are passed they are being initialized inside the Student class.
-print(Report.student_id,Report.name,Report.marks)   
+print(Report.student_id,Report.name,Report.marks)
+print(Student.on_honor_roll)   
 
+#Inheritance - combining bunch of function and attribute and inherit them in another class.
+class Chef:
+    def make_chicken(self):
+        print("The chef can make chicken.")
 
+    def make_salad(self):
+        print("The chef can make salad.")
+
+    def make_special_dish(self):
+        print("The chef can make special dish.")
+
+class masterchef(Chef): #Inherited the chef class into the master chef class.
+    def make_bbq(self):
+        print("The master chef can make bbq.")
 
 

@@ -59,22 +59,34 @@ class Logic:
             ans = "c"
             if (i == len(Questions)-1) and user == ans:
                print ("Correct Answer.Quiz Ended")
+            elif(i == len(Questions)-1) and user!= ans:
+                print("Wrong Answer.Quiz Ended.")   
             elif user == ans:
-               print("Correct Answer.Moving to next question.")    
+               print("Correct Answer.Moving to next question.") 
+            else:
+                print("Wrong Answer.Check other questions.")      
         elif (q == "Q- In which year Python was implemented?\n  a.1980  b.1989  c. 1987" ):
             user2=str(input(""))
             ans2 ="b"
             if (i == len(Questions)-1) and user2 == ans2:
                print ("Correct Answer.Quiz Ended")
+            elif(i == len(Questions)-1) and user2 != ans2:
+                print("Wrong Answer.Quiz Ended.")                
             elif user2 == ans2 :
                print("Correct Answer.Moving to next question")
+            else:
+                print("Wrong Answer.Check other questions")   
         elif (q == "Q- Who created Python?\n a.Guido Van Rossum   b.Brendan Eich  c.James Gosling"):
             user3=str(input(""))
             ans3 = "a"            
             if (i == len(Questions)-1) and user3 == ans3:
               print ("Correct Answer.Quiz Ended")
+            elif(i == len(Questions)-1) and user3 != ans3:
+                print("Wrong Answer.Quiz Ended.")               
             elif user3 == ans3:
               print("Correct Answer.Moving to next question.") 
+            else:
+                print("Wrong Answer.Check other questions")  
         else:
            print("There was an error starting the Logic.")
 
