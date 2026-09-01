@@ -144,7 +144,7 @@ class Student:
 
 Report=Student("4535","Alex","90") #When these value are passed they are being initialized inside the Student class.
 print(Report.student_id,Report.name,Report.marks)
-print(Student.on_honor_roll)   
+print(Report.on_honor_roll())   
 
 #Inheritance - combining bunch of function and attribute and inherit them in another class.
 class Chef:
