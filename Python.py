@@ -137,15 +137,16 @@ class Student:
         self.marks=marks #This means the student marks will be equal to the marks given inside the report.
 
     def on_honor_roll(self): #Object Function
-        if self.marks <= 80:
-          return True
+        if self.marks >= 80:
+          return True 
         else: 
             return False
 
-Report=Student("4535","Alex","90") #When these value are passed they are being initialized inside the Student class.
+Report=Student("4535","Alex",90) #When these value are passed they are being initialized inside the Student class.
 print(Report.student_id,Report.name,Report.marks)
 print(Report.on_honor_roll())   
 
+#Lesson 5
 #Inheritance - combining bunch of function and attribute and inherit them in another class.
 class Chef:
     def make_chicken(self):
@@ -161,4 +162,31 @@ class masterchef(Chef): #Inherited the chef class into the master chef class.
     def make_bbq(self):
         print("The master chef can make bbq.")
 
+#Lesson 6
+#Polymorphism - ability to take various forms.
+#Encapsulation-bundling data and methods together inside a class and controlling access to that data.
+#For eg- hiding impletation of the car class inside car_calling class.
+#Abstraction- hiding the internal complexity. eg- hiding self_drive inside Car class.
+class Car:
+    def __init__(self,brand):
+        self.brand=brand
+
+    def self_drive(self):
+        print(f"My car is{self.brand} and it has self drive. ")    
+
+class Car_calling(Car):
+    def __init__(self,brand,model):  
+        super().__init__(brand)
+        self.model=model
+    def model(self):
+        print(f"The model of my {self.brand} is {self.model}")    
+
+    def self_drive(self): #This self_drive function will override the earlier self_drive function.
+        print(f"My car is {self.brand} and it not does not have self drive. ")
+
+#This is an instance -actual object made from the blueprint(Class).
+r = Car_calling("Tesla","Y")
+print(r.model)
+print(r.self_drive())
+#In this overriding the old value is an example of polymorphism.
 
