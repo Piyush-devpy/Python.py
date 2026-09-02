@@ -147,7 +147,7 @@ print(Report.student_id,Report.name,Report.marks)
 print(Report.on_honor_roll())   
 
 #Lesson 5
-#Inheritance - combining bunch of function and attribute and inherit them in another class.
+#Inheritance - combining bunch of function and attribute and inherit them in another class.It is a type of another class.
 class Chef:
     def make_chicken(self):
         print("The chef can make chicken.")
@@ -230,3 +230,39 @@ class dog:
         print("woof!")
 d =dog()
 d()
+
+#Lesson 8
+#Dataclasses- a decorator  designed for holding data without writting boiler plate code for regular classes.
+#They automatically generate __init__,__repr__ etc.
+
+from dataclasses import dataclass
+
+@dataclass (frozen= True)# - This will make the whole class immutable.
+class Cartoon:
+    name:str
+    age:int
+    is_alive:bool
+
+
+Character = Cartoon("Naruto","28","True") #uses __repr__ to represent these as object.
+Character2 =Cartoon("Sasuke","30","True")
+#Character.age=-1 # Test frozen (shows error)
+print(Character)
+print(Character)
+print(Character == Character2) # uses __eq__(equal) to check if both have same attribute or not.
+
+# Compostion -contains/uses another class
+
+class car:
+    def start(self):
+        print("Engine started.")
+
+class vehicle:
+    def __init__(self):
+        self.car=car() 
+
+    def start_car(self):
+        self.car.start()
+
+c = vehicle()
+c.start_car()           
