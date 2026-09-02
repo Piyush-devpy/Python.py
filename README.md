@@ -47,15 +47,15 @@ This repository contains the concepts and learning projects that I create while 
 - Catching Error - `try/Except`
 - Reading and Write Files
 - Modules & Pip
-- Classes & Object                   ──┐    
-- Object Function                    ──┤    
-- Inheritance                        ──┤  
-- Instance                           ──┤
-- Polymorphism                       ──┤── OOP[Object-Oriendted Programming]
-- Encapsulation                      ──┤  [Creating object that contain data
-- Abstraction                        ──┤   and the action that work on the data.]
-- Magic/Dunder method                ──┤
-- Compostion                         ──┘
+- Classes & Object                       
+- Object Function                     
+- Inheritance                        
+- Instance                          
+- Polymorphism                       
+- Encapsulation                      
+- Abstraction                          
+- Magic/Dunder method                
+- Compostion                         
 
 
 ## Projects-
