@@ -50,6 +50,11 @@ This repository contains the concepts and learning projects that I create while 
 - Classes & Object
 - Object Function
 - Inheritance
+- Instance
+- Polymorphism
+- Encapsulation
+- Abstraction
+
 
 ## Projects-
 ```
