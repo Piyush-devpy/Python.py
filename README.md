@@ -54,6 +54,7 @@ This repository contains the concepts and learning projects that I create while 
 - Polymorphism
 - Encapsulation
 - Abstraction
+- Magic/Dunder method
 
 
 ## Projects-

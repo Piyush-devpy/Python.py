@@ -190,3 +190,43 @@ print(r.model)
 print(r.self_drive())
 #In this overriding the old value is an example of polymorphism.
 
+#Lesson 7
+#Magic/Dunder method
+#__len__ method- length method
+
+class Name:
+    name="Piyush"
+    def __len__(self):
+        i=0
+        for c in self.name:
+            i+=1
+        return i
+res=Name()
+print(res.name)     
+print(len(res)) # used to find length of object inside class.
+
+#__str__ method -string method
+class NewMethod:
+    Occupation ="Student"
+    def __str__(self):
+        return f"I am a {self.Occupation}."  #print does not work with __str__.
+
+result =NewMethod()
+print(result)  
+
+#__repr__ method - represent method
+class representmethod:
+    def __repr__(self):
+        Car="Bmw"
+        return f"This is my {Car}." #mainly use to represent what the object is about.
+
+c = representmethod()
+print(c)    # this represented car as an object here.
+
+#__call__ method
+
+class dog:
+    def __call__(self):
+        print("woof!")
+d =dog()
+d()
