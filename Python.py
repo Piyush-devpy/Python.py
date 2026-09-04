@@ -266,3 +266,32 @@ class vehicle:
 
 c = vehicle()
 c.start_car()           
+
+#Lesson 9
+#Iterator -  an object that return one  at a time from a sequence(or data stream) and remember it position between call.
+#__iter__()-return the iterator object itself.
+#__next__()-return the next item in the sequence.(raises stop iterator when no more items.)
+#It is object specific.Iterator concept is used inside for loop.
+
+import random 
+
+class dice:
+    def __init__(self,rolls):
+        self.rolls=rolls
+        self.count=0
+
+    def __iter__(self): #Tell the class object is iterable
+        return self 
+
+    def __next__(self): #Calls the next value from the object
+            if self.count < self.rolls:
+                self.count+=1
+                return random.randint(1,6) #take random number between 1 and 6.
+            else:
+                raise StopIteration
+
+die = dice(3)
+for x in die:
+    print(x)          
+    
+         

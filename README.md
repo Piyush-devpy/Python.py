@@ -55,7 +55,8 @@ This repository contains the concepts and learning projects that I create while 
 - Encapsulation                      
 - Abstraction                          
 - Magic/Dunder method                
-- Compostion                         
+- Compostion   
+- Iterator                      
 
 
 ## Projects-
