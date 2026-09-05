@@ -56,7 +56,9 @@ This repository contains the concepts and learning projects that I create while 
 - Abstraction                          
 - Magic/Dunder method                
 - Compostion   
-- Iterator                      
+- Iterator               
+- Generator and yields
+- Decorator       
 
 
 ## Projects-

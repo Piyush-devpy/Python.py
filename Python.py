@@ -292,6 +292,39 @@ class dice:
 
 die = dice(3)
 for x in die:
-    print(x)          
+    print(x)         
+
+#Lesson 10
+#Generator-Function that behave like iterator (can be used inside a for loop.)     
+#Pause a function,returns a value,then resume - Yields(returns lots of dtata one by one.)
+#Uses yield instead of return.Iterate without loading memory
+
+def count_to(n):
+    count=1
+    while  count<=n:
+        yield count
+        count +=1
+
+number = int(input("Enter a number: "))
+for n in count_to(number):
+    print (n)        
+
+#Basically generator is used when you want to print or store lots of data that cannot be done using 'return'.[as it shows memory error] 
+
+#Decorator - a function that extends  the behaviour of another function w/o modiofying the base function.
+
+def syrup(func):
+    def wrapper(*args,**kwargs): #It only take argument and keyword arguement.
+        print("Here is your syurp")
+        func(*args,**kwargs)
+    return wrapper
+           #Here I created a decorator to extend my drink funciton.
+@syrup
+def drink(flavour): # for using parameter inside function u should give argument or kwargs inside the decorator.
+    print(f"I need a {flavour} drink")
+
+drink("Vanilla")    
+#args - store data inside a tuple use for storing postional value.
+#kwargs - store data inside dictionary use for storing key value.
     
          
