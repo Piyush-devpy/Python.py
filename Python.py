@@ -349,3 +349,58 @@ number = outer()
 number()
 number()
 number()
+
+#Property - used to define a method as a property(it can be accessed like and attribute)
+#provides with getter,setter and delete method
+
+class rectangle:
+    def __init__(self,height,width):
+        self._height=height
+        self. _width=width
+
+
+    #getter - get info 
+    @property
+    def height(self):
+        return f"The height is {self._height}"
+
+    @property
+    def width(self):
+        return f"The widht is {self._width}"
+
+    #setter=read and write
+    @height.setter
+    def height(self,new_height):
+        if new_height > 0:
+            self._height= new_height
+        else:
+            print("Height cannot be negative or zero") 
+
+    @width.setter
+    def width(self,new_width):
+        if new_width > 0:
+            self._width= new_width
+        else:
+            print("Height cannot be negative or zero") 
+
+    #Deleter - delete a property
+    @width.deleter
+    def width(self):
+        del self._width
+        print("Data cleared.")        
+
+    
+    @height.deleter
+    def height(self):
+        del self._height
+        print("Data cleared.")         
+
+rec = rectangle(3,4)
+#setter
+rec.width=5
+rec.height=4
+print(rec._height)
+print(rec._width)
+#deleter
+del rec.width
+del rec.height
