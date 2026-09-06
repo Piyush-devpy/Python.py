@@ -59,6 +59,8 @@ This repository contains the concepts and learning projects that I create while 
 - Iterator               
 - Generator and yields
 - Decorator       
+- Closure
+- Property
 
 
 ## Projects-
