@@ -327,4 +327,25 @@ drink("Vanilla")
 #args - store data inside a tuple use for storing postional value.
 #kwargs - store data inside dictionary use for storing key value.
     
-         
+#Lesson 11
+#Closure - a function inside another function.
+def outer():      #This is a outer function
+
+    number_list = []
+
+    def inner():  # This is an inner function
+
+        n = int(input("Enter a number: "))
+        number_list.append(n)
+
+        if len(number_list) == 3:
+            print("Your list:", number_list)
+
+    return inner
+
+
+number = outer()
+
+number()
+number()
+number()
