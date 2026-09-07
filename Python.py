@@ -404,3 +404,25 @@ print(rec._width)
 #deleter
 del rec.width
 del rec.height
+
+
+#Lesson 12
+#Descriptor - an object that controls what happens when you get, set, or delete an attribute of another object.
+class menu_list:
+    def __get__(self,instance,owner):
+        pass
+
+    def __set__(self, instance, value):
+        print("Menu Updated:",value)
+
+    def __delete__(self, instance):
+        print("Item deleted from the menu.")    
+
+class menu:
+    item = menu_list()
+
+m=menu()
+m.item ="Shahi Paneer"
+
+del m.item
+print(m.item)

@@ -61,6 +61,7 @@ This repository contains the concepts and learning projects that I create while 
 - Decorator       
 - Closure
 - Property
+- Descriptor
 
 
 ## Projects-
