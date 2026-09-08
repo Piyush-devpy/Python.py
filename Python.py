@@ -426,3 +426,54 @@ m.item ="Shahi Paneer"
 
 del m.item
 print(m.item)
+
+#Lesson 13
+#Typehint-Help the reader.other person to understand the code easily.
+def add(a:int,b:int) -> int:
+    return a+b
+
+print(add(6,6))
+
+#Variable annotation
+#var:type="value"
+name:str="Piyush"
+number:int=1
+sum:int=12
+
+#Multiple type
+def multiple_value(value:{str,float,bool})->str:
+    return value
+
+print(multiple_value(29))
+
+#Match/Case statement
+#alternative for using many elif statements.Execute some code if value matches the case.
+def day_of_the_week(day):
+    match day:
+        case 1:
+            return "Day:Monday"
+        case 2:
+            return "Day:Tuesday"
+        case 3:
+            return "Day:Wednesday"
+        case 4:
+            return "Day:Thursday"
+        case 5:
+            return "Day:Friday"
+        case 6:
+            return "Day:Saturday"
+        case 7:
+            return "Day:Sunday"
+
+print(day_of_the_week(1))        
+
+#Structural Unpacking
+#taking values from a collection (like a list, tuple, or dictionary) and assigning them directly to variables based on their structure.
+#Can be done in loops,list,dictorary,
+tupl = ("Piyush",18)
+
+name,age = tupl
+
+print(name)
+print(age)
+

@@ -62,6 +62,9 @@ This repository contains the concepts and learning projects that I create while 
 - Closure
 - Property
 - Descriptor
+- Type Hinting
+- Pattern Matching (Match/Case) 
+- Structural Unpacking
 
 
 ## Projects-
