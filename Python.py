@@ -477,3 +477,18 @@ name,age = tupl
 print(name)
 print(age)
 
+#Modules-
+ #OS Module- interact with the operating system.
+import os
+
+#some common usage commands -
+print(os.getcwd()) #return the current working directory.
+os.chdir("directory location") #change the directory.
+os.mkdir("New dir") #os make new directory.
+os.listdir() #list file in current folder.
+os.path.abspath("filename") #show the full path of the directory
+os.path.isdir("filename") #check whether directory is present or not(boolean response).
+os.rename("oldname","new name") #rename a directory
+os.rmdir("filename") #remove a directory.
+
+#for more read the python documentation - "https://docs.python.org/3/library/os.html"
