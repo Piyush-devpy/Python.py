@@ -492,3 +492,18 @@ os.rename("oldname","new name") #rename a directory
 os.rmdir("filename") #remove a directory.
 
 #for more read the python documentation - "https://docs.python.org/3/library/os.html"
+
+
+#Path module
+#pathlib is Python's built-in module for working with files and folders (paths). 
+# It is generally cleaner and easier to use than the older os.path approach.
+from pathlib import Path
+
+p =Path('.')
+[x for x in p.iterdir() if x.isdir()] #Storing every item inside dir into a list name .
+list(p.glob('**/*.py')) #used to find all line inside current folder and python subfolder.
+q=p#/path1/path2
+print(q)
+print(q.resolve)#used for combining paths.
+
+#for more read the python documentation - https://docs.python.org/3/library/pathlib.html
