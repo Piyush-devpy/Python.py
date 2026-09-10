@@ -491,8 +491,6 @@ os.path.isdir("filename") #check whether directory is present or not(boolean res
 os.rename("oldname","new name") #rename a directory
 os.rmdir("filename") #remove a directory.
 
-#for more read the python documentation - "https://docs.python.org/3/library/os.html"
-
 
 #Path module
 #pathlib is Python's built-in module for working with files and folders (paths). 
@@ -505,5 +503,3 @@ list(p.glob('**/*.py')) #used to find all line inside current folder and python 
 q=p#/path1/path2
 print(q)
 print(q.resolve)#used for combining paths.
-
-#for more read the python documentation - https://docs.python.org/3/library/pathlib.html
