@@ -503,3 +503,21 @@ list(p.glob('**/*.py')) #used to find all line inside current folder and python 
 q=p#/path1/path2
 print(q)
 print(q.resolve)#used for combining paths.
+
+#sys module
+#help us interact with python interpreter and system enviorment.
+import sys 
+print(sys.argv) #command line argument 
+#Output - Name.txt,Project.py,Python.py,Readme.md inside a list
+sys.stdout.write("Hellow world") # another way of writting print("Hello  world")
+sys.stdout.write("Enter Your Age:")
+sys.stdout.flush()
+age =sys.stdin.readline().strip()
+sys.stdout.write("Your age is:"+ age )# to get the text [Enter your name],as u cannot use it inside .readline
+# another way of typing user_input=input("Enter Your Name:")
+try:
+    age = int("hello")
+except ValueError as e:
+    sys.stderr.write(str(e) + "\n") #Error catching.
+
+    
