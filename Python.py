@@ -520,4 +520,30 @@ try:
 except ValueError as e:
     sys.stderr.write(str(e) + "\n") #Error catching.
 
+#JSON module
+#Help us to work with JSON data(Javascript Object Notation data.)
+import json 
+
+#dump - used to convert python object into json string.
+ 
+data={
+    "Name":"Piyush",
+    "Age":18,
+    "Height":6.1+"Feet"
+} 
+
+new_data=json.dump(data)
+print(new_data)
+#output - {"Name": "Piyush", "Age": 18, "Height": 6.1}
+
+#Load - when you need data fron json
+
+d=json.load(new_data)
+print(data[name]) #Piyush
+print(data[age]) #18
+
+#read and write json file
+with open("config.json", "r+") as file:
+    json.dump(data,file,indent=3)
+
     
