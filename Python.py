@@ -546,4 +546,15 @@ print(data[age]) #18
 with open("config.json", "r+") as file:
     json.dump(data,file,indent=3)
 
-    
+#Csv module
+#[Common Seperated Values]CSVis the most common import and export format for spreadsheet and database.    
+import csv
+
+with open('spam.csv',"r+",newline="")as csv1:
+    spamreader = csv.reader(csv1,delimiter=',',quotechar='"')
+    csv1.seek(0,2)
+    spamwriter = csv.writer(csv1)
+    spamwriter.writerow(['Ankit','20','Rajasthan'])
+    csv1.seek(0)
+    for row in spamreader:
+        print(row)
