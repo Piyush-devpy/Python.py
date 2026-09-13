@@ -6,7 +6,7 @@
 
 <img src="https://img.shields.io/badge/Python-3%2B-blue?logo=python&logoColor=white">
 <img src="https://img.shields.io/badge/Level-Beginner%20→%20Advanced-green">
-<img src="https://img.shields.io/badge/Status-Learning-yellow">
+<img src="https://img.shields.io/badge/Status-Finished-Red">
 
 </div>
 
@@ -83,4 +83,5 @@ Lessons/
 ├── Name.txt
 ├── Project.py
 ├── Python.py
-└── README.md
+├── Reamde.md
+└── spam.csv
