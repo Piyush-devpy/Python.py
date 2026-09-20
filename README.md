@@ -2,17 +2,17 @@
 
 <img src="https://www.python.org/static/community_logos/python-logo.png" alt="Python Logo" width="250">
 
-<h1><u> Learning Python</u></h1>
+<h1><u>Learning Python</u></h1>
 
 <img src="https://img.shields.io/badge/Python-3%2B-blue?logo=python&logoColor=white">
 <img src="https://img.shields.io/badge/Level-Beginner%20→%20Advanced-green">
-<img src="https://img.shields.io/badge/Status-Finished-green>
+<img src="https://img.shields.io/badge/Status-Finished-green">
 
 </div>
 
 ---
 
-## 👋 Hello There!
+## Hello There!
 
 Welcome to my Python learning repository!
 
@@ -24,58 +24,60 @@ I will keep updating this repository whenever I learn something new.
 
 ---
 
-## 📚 What This Repository Contains
+## What This Repository Contains
 
 This repository contains the concepts and learning projects that I create while learning Python.
 
+* Variables
+* Data Types
+* Strings
+* Numbers
+* User Input
+* Basic Operators
+* Lists
+* Tuples
+* Dictionaries
+* Functions
+* `if / elif / else`
+* `for` Loops
+* `while` Loops
+* String Methods
+* List Methods
+* Error Handling — `try / except`
+* Reading and Writing Files
+* Modules & Pip
+* Classes & Objects
+* Object Methods
+* Inheritance
+* Instances
+* Polymorphism
+* Encapsulation
+* Abstraction
+* Magic/Dunder Methods
+* Composition
+* Iterators
+* Generators and `yield`
+* Decorators
+* Closures
+* Properties
+* Descriptors
+* Type Hinting
+* Pattern Matching (`match / case`)
+* Structural Unpacking
 
-- Variables
-- Data Types
-- Strings
-- Numbers
-- User Input
-- Basic Operators
-- Lists
-- Tuples
-- Dictionaries
-- Functions
-- `if / elif / else`
-- `for` Loops
-- `while` Loops
-- String Methods
-- List Methods
-- Catching Error - `try/Except`
-- Reading and Write Files
-- Modules & Pip
-- Classes & Object                       
-- Object Function                     
-- Inheritance                        
-- Instance                          
-- Polymorphism                       
-- Encapsulation                      
-- Abstraction                          
-- Magic/Dunder method                
-- Compostion   
-- Iterator               
-- Generator and yields
-- Decorator       
-- Closure
-- Property
-- Descriptor
-- Type Hinting
-- Pattern Matching (Match/Case) 
-- Structural Unpacking
+---
 
+## Projects
 
-## Projects-
+```text
+├── Guess Game
+├── Translator
+└── Multiple Choice Question Quiz
 ```
- - Guess Game
- - Translator
- - Multiple choice question Quiz
-```
 
+---
 
-## 🗂️ Repository Structure
+## Repository Structure
 
 ```text
 Lessons/
@@ -83,5 +85,6 @@ Lessons/
 ├── Name.txt
 ├── Project.py
 ├── Python.py
-├── Reamde.md
+├── README.md
 └── spam.csv
+```
