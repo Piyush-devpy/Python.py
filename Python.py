@@ -588,4 +588,6 @@ if __name__ =="__main__":  #Important line to run the code
     app.run(debug =True)
 
 #redirect - it mean moving from pages to pages.
-#session- remembering a particular session like having premium of an site .    
+#session- remembering a particular session like having premium of an site .  
+
+#
