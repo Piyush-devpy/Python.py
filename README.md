@@ -73,7 +73,7 @@ This repository contains the concepts and learning projects that I create while 
 ├── Guess Game
 ├── Translator
 ├── Multiple Choice Question Quiz
-└── Login Form Using Flask
+└── Login Form Using Flask Module
 ```
 
 ---
