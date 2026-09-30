@@ -12,9 +12,17 @@ def login():
     username=request.form.get("username")
     password=request.form.get("password")
     
-    if username == "Piyush27" and password == "2727":
-      return render_template("welcome.html",name=username)
+    # if username == "Piyush27" and password == "2727":
+    #   return render_template("welcome.html",name=username)
     
+    valid_user={
+        "admin":"123",
+        "piyush":"2727",
+        "login":"555"
+    }
+
+    if username in valid_user  and password == valid_user[username]:
+        return render_template("welcome.html", name = username)
 
 if __name__== "__main__":
     app.run(debug=True)
