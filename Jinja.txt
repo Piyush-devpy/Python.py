@@ -1,0 +1,17 @@
+JINJA2 
+
+{{variables}}
+FOR NAME-
+{{name}}
+
+<p>Welcome,{{Name}}</p>
+
+{Conditions}
+IF AND ELSE-
+is_topper=True
+
+{%If  is_topper %}....
+<p>You are  a topper</p>
+{%else%}..
+<p>You are not a topper</p>
+{%endif%}....
