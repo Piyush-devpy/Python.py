@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        {% block title %}Feedback Page{% endblock %}
+    </title>
+    <style>
+        body{font-family:Arial, Helvetica, sans-serif;padding: 20px;}
+        header.footer{background: #333;padding: 10px;color:white;}
+        nav a{margin: 10px;color:white;text-decoration: none;}
+        main{
+            background: white;padding: 20px;margin-top: 20px;border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/feedback">Feedback</a>
+        </nav>
+    </header>
+
+    <main>
+        {%block content%}
+        {%endblock%}
+    </main>
+
+    <footer>
+        @2026 Anything copyright is copyright - Albert Einstien
+    </footer>
+    
+</body>
+</html>
