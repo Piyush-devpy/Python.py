@@ -1,0 +1,10 @@
+{%extends "base.html" %}
+
+{% block title%}FORM{% endblock %}
+
+{%block content%}
+<h2>Send Us Your Feedback</h2>
+<form method="POST" action="/form">
+    {{form.hiddern_tag}}
+</form>
+{%endblock%}
